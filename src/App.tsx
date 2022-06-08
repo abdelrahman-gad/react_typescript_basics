@@ -20,13 +20,15 @@ import './App.css';
 // import { Private } from './components/auth/Private';
 // import { Profile } from './components/auth/Profile';
 // import { List } from './components/generics/List';
-
-import {RandomNumber} from './components/restriction/RandomNumber'; 
+// import {RandomNumber} from './components/restriction/RandomNumber'; 
+import { Text } from './components/polymorphic/Text';
 
 function App() {
   return (
     <div className="App">
-      <RandomNumber value={0}  isZero />
+      <Text  as='h1' size='lg' >Heading</Text>
+      <Text  as='p' size='md' >paragraph</Text>
+      <Text htmlFor='someid'  as='label' size='sm' color='secondary'>Label</Text>
     </div>
   );
 }
